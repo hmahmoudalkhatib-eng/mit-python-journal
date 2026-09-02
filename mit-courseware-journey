@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyN+ScAk28tB5EQ8Fm3/Hl3i",
+      "authorship_tag": "ABX9TyMZTrbVcUbjjRYq6hOiwaoy",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -29,97 +29,16 @@
     {
       "cell_type": "code",
       "source": [
-        "secret = 14\n",
-        "for x in range(1,15):\n",
-        " if x == secret:\n",
-        "  print(\"found\")\n",
-        "  break\n",
-        " else:\n",
-        "    print(\"not found\")\n"
+        "x = 0\n",
+        "for x in range (11):\n",
+        "  x += 0.1\n",
+        "  print(x== 0.9)"
       ],
       "metadata": {
-        "id": "PlfUpvJPtVbA",
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "outputId": "d321a2d1-fa3e-4bea-c553-6ab81cd4f9e9"
+        "id": "kGO307cPZ9iK"
       },
       "execution_count": null,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "not found\n",
-            "not found\n",
-            "not found\n",
-            "not found\n",
-            "not found\n",
-            "not found\n",
-            "not found\n",
-            "not found\n",
-            "not found\n",
-            "not found\n",
-            "not found\n",
-            "not found\n",
-            "not found\n",
-            "found\n"
-          ]
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "\n",
-        "\n",
-        " pothole_count = 0\n",
-        " garbage_count = 0\n",
-        "while True:\n",
-        "   ask = input(\"what do you want to record? :\")\n",
-        "\n",
-        "if ask == pothole :\n",
-        "   print(\"pothole recorded\")\n",
-        "   break\n",
-        "\n",
-        "\n",
-        "\n",
-        "elif ask == pothole_count:\n",
-        "\n",
-        "  pothole_count = pothole_count + 1\n",
-        "  print(f\"The pothole_count\" , \"is\" , {pothole_count})\n",
-        "\n",
-        "elif ask == garbage_count :\n",
-        "\n",
-        "  print(\"garbage_count\")\n",
-        "  garbage_count = garbage_count + 1\n",
-        "\n",
-        "elif ask == garbage:\n",
-        "\n",
-        "  print(\"garbage recorded\")\n",
-        "\n",
-        "else:\n",
-        "\n",
-        "  print(\"inavlid\")\n",
-        "  break"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "1d7uDrY8Rh5V",
-        "outputId": "46786484-f650-44ea-cfef-b3e773443fb9"
-      },
-      "execution_count": null,
-      "outputs": [
-        {
-          "name": "stdout",
-          "output_type": "stream",
-          "text": [
-            "what do you want to record? :pothole\n"
-          ]
-        }
-      ]
+      "outputs": []
     }
   ]
 }
