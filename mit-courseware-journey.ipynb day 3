@@ -1,0 +1,67 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNA+idKmYDcnfHMalecvOTX",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/hmahmoudalkhatib-eng/mit-python-journal/blob/main/mit-courseware-journey.ipynb%20day%203\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ask = float(input(\"what is your annual salary :\"))\n",
+        "ask1= float(input(\"what is your portion saved :\"))\n",
+        "ask2 =float(input(\"what is the total cost of your dream home  :\"))\n",
+        "while True:\n",
+        "  depost=ask1\n",
+        "  r=0.04\n",
+        "  savings = 0.1*ask\n",
+        "  months =savings*0.04/12 + ask1\n",
+        "  n=months*r/12 + months + depost\n",
+        "  d=n*r/12 +n +depost\n",
+        "  print(d)\n",
+        "  break\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kGO307cPZ9iK",
+        "outputId": "8488f2c8-81d7-4f27-a668-a7bef3c26480"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "what is your annual salary :1200\n",
+            "what is your portion saved :120\n",
+            "what is the total cost of your dream home  :12000\n",
+            "361.60400444444446\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
