@@ -1,0 +1,89 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNDXyN+aoTi8b2UB4x6twU6",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/hmahmoudalkhatib-eng/mit-python-journal/blob/main/mit-courseware-journeyday4.ipynb%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "annual_salary = int(input(\"what is your annual salary :\"))\n",
+        "portion_saved = int(input(\"what is your portion saved :\"))\n",
+        "dream_home = int(input(\"what is the total cost of your dream home :\"))\n",
+        "semi_annual_raise = float(input(\"what is the semi annual raise :\"))\n",
+        "current_savings = 0\n",
+        "down_payment = 0\n",
+        "r = 0.04\n",
+        "\n",
+        "months_passed = 0\n",
+        "\n",
+        "while current_savings < dream_home:\n",
+        "\n",
+        "\n",
+        "    formula = current_savings * r / 12\n",
+        "    raise_1 = ask*(1+semi_annual_raise)\n",
+        "    down_payment = formula + portion_saved\n",
+        "    annual_salary*=(1+semi_annual_raise )\n",
+        "    current_savings += down_payment\n",
+        "    months_passed += 1\n",
+        "    if months_passed % 6 == 0:\n",
+        "     ask+=raise_1\n",
+        "print(months_passed)\n",
+        "#TODO:\n",
+        ""
+      ],
+      "metadata": {
+        "id": "PlfUpvJPtVbA",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "2b3169ab-97d8-4196-8075-213a26161d64"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "what is your annual salary :1200\n",
+            "what is your portion saved :120\n",
+            "what is the total cost of your dream home :12000\n",
+            "what is the semi annual raise :0.92\n",
+            "87\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "zA9BNbswOpzO"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
